@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제7차 행축 아카데미 | DYNAMITE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* 사용자 정의 스타일 */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5, h6, .font-poppins {
+            font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-gray-800 text-center mb-4;
+        }
+        .section-subtitle {
+            @apply text-center text-gray-500 max-w-2xl mx-auto mb-12;
+        }
+        .gradient-text {
+            @apply bg-gradient-to-r from-amber-500 to-red-600 bg-clip-text text-transparent;
+        }
+        .cta-button {
+            @apply inline-block bg-gradient-to-r from-amber-500 to-red-600 text-white font-bold text-lg py-4 px-10 rounded-full shadow-lg hover:scale-105 transform transition-transform duration-300;
+        }
+        /* 스크롤 애니메이션을 위한 기본 스타일 */
+        .reveal {
+            position: relative;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 1s ease;
+        }
+        .reveal.active {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- 헤더 및 네비게이션 -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="font-bold text-2xl font-poppins text-gray-800">행축<span class="gradient-text">DYNAMITE</span></a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#intro" class="text-gray-600 hover:text-amber-600 transition">소개</a>
+                <a href="#features" class="text-gray-600 hover:text-amber-600 transition">특징</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-amber-600 transition">후기</a>
+                <a href="#speakers" class="text-gray-600 hover:text-amber-600 transition">강사진</a>
+                <a href="#schedule" class="text-gray-600 hover:text-amber-600 transition">일정</a>
+                <a href="#register" class="text-gray-600 hover:text-amber-600 transition">등록안내</a>
+            </nav>
+            <a href="#register" class="hidden md:inline-block bg-gray-800 text-white font-bold py-2 px-6 rounded-full hover:bg-gray-700 transition">지금 등록하기</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 메인 히어로 섹션 -->
+        <section id="home" class="relative h-screen flex items-center justify-center text-white text-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1579169825453-8d4b4653cc2c?q=80&w=1974&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 px-4">
+                <p class="font-bold text-xl md:text-2xl mb-4 text-amber-300 tracking-widest font-poppins">DYNAMITE</p>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black font-poppins leading-tight mb-4 tracking-tighter">
+                    <span class="text-amber-400">복음의 능력</span>이 폭발할 때, 교회는 진격합니다
+                </h1>
+                <p class="text-lg md:text-2xl mb-8 font-light max-w-4xl mx-auto">
+                    교회의 체질을 바꾸는 복음의 다이너마이트, 제7차 행축 아카데미가 제주에서 폭발합니다!
+                </p>
+                <p class="font-bold text-xl md:text-2xl mb-10">2025년 10월 27일(월) - 29일(수) | 제주국제교회</p>
+                <a href="#register" class="cta-button">아카데미 등록 바로가기</a>
+            </div>
+        </section>
+
+        <!-- 고민 섹션 -->
+        <section id="intro" class="py-20 md:py-28">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title reveal">목회자님, 이런 <span class="gradient-text">고민</span>이 있으신가요?</h2>
+                <p class="section-subtitle reveal">멈춰버린 성장, 식어버린 열정 앞에서 어디서부터 다시 시작해야 할지 막막하십니까?</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg reveal">
+                        <div class="text-4xl mb-4">📉</div>
+                        <h3 class="text-xl font-bold mb-2">멈춰버린 성장</h3>
+                        <p class="text-gray-500">성도 수는 줄고, 새신자는 찾아보기 힘든 현실</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg reveal">
+                        <div class="text-4xl mb-4">🔄</div>
+                        <h3 class="text-xl font-bold mb-2">반복되는 행사</h3>
+                        <p class="text-gray-500">1회성 이벤트에 지쳐버린 성도들의 피로감</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg reveal">
+                        <div class="text-4xl mb-4">❓</div>
+                        <h3 class="text-xl font-bold mb-2">잃어버린 동력</h3>
+                        <p class="text-gray-500">무엇부터 해야 할지 방향을 찾지 못하는 답답함</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg reveal">
+                        <div class="text-4xl mb-4">❄️</div>
+                        <h3 class="text-xl font-bold mb-2">식어버린 활력</h3>
+                        <p class="text-gray-500">코로나 이후 좀처럼 회복되지 않는 교회의 분위기</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 해결책: 행축 소개 및 통계 -->
+        <section class="py-20 md:py-28 bg-gray-800 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4 reveal">행축은 교회의 체질을 바꾸는 <span class="text-amber-400">'목회 생태계'</span>입니다</h2>
+                <p class="text-center text-gray-300 max-w-2xl mx-auto mb-16 reveal">단순한 프로그램을 넘어, 잠자는 평신도를 영혼 구원의 증인으로 세우는 살아있는 시스템입니다.</p>
+
+                <div class="bg-white/10 rounded-2xl p-10 md:p-16 max-w-5xl mx-auto reveal">
+                    <h3 class="text-2xl font-bold text-amber-400 mb-8">숫자가 증명하는 압도적 결과</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                        <div class="border-l-4 border-amber-400 pl-6">
+                            <p class="text-lg text-gray-300">지난 15년간 총 방문자</p>
+                            <p class="text-5xl md:text-6xl font-bold font-poppins tracking-tighter" data-target="85558">0</p>
+                        </div>
+                        <div class="border-l-4 border-amber-400 pl-6">
+                            <p class="text-lg text-gray-300">총 등록자</p>
+                            <p class="text-5xl md:text-6xl font-bold font-poppins tracking-tighter" data-target="10689">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 특징 비교 -->
+        <section id="features" class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title reveal">왜 <span class="gradient-text">행축</span>이어야만 하는가?</h2>
+                <div class="max-w-4xl mx-auto mt-12 reveal">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-2 border-gray-200 rounded-2xl overflow-hidden shadow-xl">
+                        <div class="p-8 bg-gray-100">
+                            <h3 class="text-2xl font-bold text-gray-500 mb-4 text-center">기존의 전도</h3>
+                            <ul class="space-y-4 text-lg">
+                                <li class="flex items-start"><span class="text-red-500 mr-3">❌</span> <span>소수의 열정, 다수의 방관</span></li>
+                                <li class="flex items-start"><span class="text-red-500 mr-3">❌</span> <span>일회성 행사, 낮은 정착률</span></li>
+                                <li class="flex items-start"><span class="text-red-500 mr-3">❌</span> <span>막연한 방법론과 동기부여</span></li>
+                            </ul>
+                        </div>
+                        <div class="p-8 bg-white">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">행축(Haengchook)</h3>
+                            <ul class="space-y-4 text-lg">
+                                <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✔️</span> <span class="font-semibold">전 성도가 참여하는 축제</span></li>
+                                <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✔️</span> <span class="font-semibold">3개월의 체계적 과정, 높은 정착률</span></li>
+                                <li class="flex items-start"><span class="text-green-500 font-bold mr-3">✔️</span> <span class="font-semibold">누구나 따라하는 10단계 로드맵</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 후기 섹션 -->
+        <section id="testimonials" class="py-20 md:py-28 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title reveal">전국 교회가 <span class="gradient-text">증명</span>합니다</h2>
+                <p class="section-subtitle reveal">이것은 한 교회의 이야기가 아닌, 검증된 '시스템'의 힘입니다.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg flex flex-col md:flex-row items-center gap-6 reveal">
+                        <img src="https://placehold.co/120x120/E2E8F0/4A5568?text=목사님" alt="이상진 목사" class="w-24 h-24 rounded-full flex-shrink-0">
+                        <div>
+                            <p class="text-lg mb-4 italic">"60명 남짓하던 교회가 행축 이후 모든 전쟁이 종결되고, 새 신자와 기존 성도가 반반이 되었습니다."</p>
+                            <p class="font-bold text-right">- 이상진 목사 (구미신평교회)</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg flex flex-col md:flex-row items-center gap-6 reveal">
+                        <img src="https://placehold.co/120x120/E2E8F0/4A5568?text=목사님" alt="설주호 목사" class="w-24 h-24 rounded-full flex-shrink-0">
+                        <div>
+                            <p class="text-lg mb-4 italic">"주일 평균 출석 30명도 안 되던 교회가 행축 이후 60명 공동체가 되어 복음을 전하는 일에 최고의 가치를 두게 되었습니다."</p>
+                            <p class="font-bold text-right">- 설주호 목사 (주님사랑의교회)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 강사진 및 커리큘럼 -->
+        <section id="speakers" class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                 <h2 class="section-title reveal">무엇을 <span class="gradient-text">얻게 됩니까?</span></h2>
+                <p class="section-subtitle reveal">대체불가한 복음의 능력(DYNAMITE)으로 교회를 새롭게 할 모든 것을 전수합니다.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-16">
+                    <div class="text-center p-6 reveal">
+                        <div class="text-5xl gradient-text mb-4">📖</div>
+                        <h3 class="text-xl font-bold mb-2">행축 철학 & 10 STEP</h3>
+                        <p>교회의 에너지를 전도에 집중시키는 구체적인 실행 전략</p>
+                    </div>
+                    <div class="text-center p-6 reveal">
+                        <div class="text-5xl gradient-text mb-4">💧</div>
+                        <h3 class="text-xl font-bold mb-2">'물밑 작업'의 실제</h3>
+                        <p>잠자는 성도를 전도자로 세우는 강력한 동기부여 노하우</p>
+                    </div>
+                     <div class="text-center p-6 reveal">
+                        <div class="text-5xl gradient-text mb-4">🎤</div>
+                        <h3 class="text-xl font-bold mb-2">살아있는 전도 설교</h3>
+                        <p>불신자의 마음을 여는 복음 중심의 설교와 예배 기획</p>
+                    </div>
+                     <div class="text-center p-6 reveal">
+                        <div class="text-5xl gradient-text mb-4">📂</div>
+                        <h3 class="text-xl font-bold mb-2">모든 실전 자료</h3>
+                        <p>전도지, 포스터, 영상, 설교문 등 즉시 적용 가능한 자료 원본</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto reveal">
+                    <div class="text-center">
+                        <img src="https://placehold.co/200x200/cccccc/333333?text=도원욱+목사" alt="도원욱 목사" class="w-48 h-48 rounded-full mx-auto mb-4 shadow-lg">
+                        <h3 class="text-2xl font-bold">도원욱 목사</h3>
+                        <p class="text-amber-600 font-semibold">행축아카데미 대표 / 한성교회 담임</p>
+                        <p class="mt-2 text-gray-500">"행축의 시작은 복음선포에 있다!" 행축 시스템의 설계자이자 15년간 부흥을 이끌어온 산증인. 교회의 본질을 꿰뚫는 강력한 메시지와 목회 전략을 제시합니다.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://placehold.co/200x200/cccccc/333333?text=유지혜+전도사" alt="유지혜 전도사" class="w-48 h-48 rounded-full mx-auto mb-4 shadow-lg">
+                        <h3 class="text-2xl font-bold">유지혜 전도사</h3>
+                        <p class="text-amber-600 font-semibold">행축연구소 소장 / 한성교회 기획담당</p>
+                        <p class="mt-2 text-gray-500">"행축으로 교회는 진격한다!" 행축의 실제적인 10스텝을 설계하고 수많은 교회의 적용을 도운 실무 총괄 책임자. 교회를 진격하게 하는 현장의 전략을 나눕니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 일정 섹션 -->
+        <section id="schedule" class="py-20 md:py-28 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title reveal"><span class="gradient-text">아카데미</span> 상세 일정</h2>
+                <div class="max-w-6xl mx-auto bg-white rounded-2xl shadow-xl p-8 md:p-12 mt-12 reveal">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                        <!-- 1일차 -->
+                        <div>
+                            <h3 class="text-xl font-bold border-b-2 border-amber-500 pb-2 mb-4">1일차 | 10.27 (월)</h3>
+                            <ul class="space-y-3 text-left">
+                                <li><span class="font-semibold text-gray-500">14:00-15:00</span> 제주공항 도착 및 셔틀 이동</li>
+                                <li><span class="font-semibold text-gray-500">15:00-15:30</span> 환영 및 조별 인사</li>
+                                <li><span class="font-semibold text-gray-500">15:30-16:20</span> 한성 워십 & 개회예배</li>
+                                <li><span class="font-semibold text-gray-500">16:20-17:20</span> 강의: 행축 철학 & 워크샵 1</li>
+                                <li><span class="font-semibold text-gray-500">17:20-19:00</span> 저녁 식사</li>
+                                <li><span class="font-semibold text-gray-500">19:00-19:20</span> 한성 워십</li>
+                                <li><span class="font-semibold text-gray-500">19:20-20:30</span> 메인강의: 대체불가 DYNAMITE</li>
+                                <li><span class="font-semibold text-gray-500">20:30-21:00</span> 기도회</li>
+                                <li><span class="font-semibold text-gray-500">21:00-</span> 숙소로 이동</li>
+                            </ul>
+                        </div>
+                        <!-- 2일차 -->
+                        <div>
+                             <h3 class="text-xl font-bold border-b-2 border-amber-500 pb-2 mb-4">2일차 | 10.28 (화)</h3>
+                             <ul class="space-y-3 text-left">
+                                <li><span class="font-semibold text-gray-500">07:00-09:00</span> 조식 및 교제</li>
+                                <li><span class="font-semibold text-gray-500">09:00-12:00</span> 조별 워크샵 2 & 제주 투어</li>
+                                <li><span class="font-semibold text-gray-500">12:00-15:00</span> 점심 식사</li>
+                                <li><span class="font-semibold text-gray-500">15:00-15:20</span> 한성 워십</li>
+                                <li><span class="font-semibold text-gray-500">15:20-17:00</span> 실무강의: 행축 10 STEP</li>
+                                <li><span class="font-semibold text-gray-500">17:00-19:00</span> 저녁 식사</li>
+                                <li><span class="font-semibold text-gray-500">19:00-19:20</span> 한성 워십</li>
+                                <li><span class="font-semibold text-gray-500">19:20-20:30</span> 메인강의: 리더십 DYNAMITE</li>
+                                <li><span class="font-semibold text-gray-500">20:30-21:00</span> 기도회</li>
+                                <li><span class="font-semibold text-gray-500">21:00-</span> 숙소로 이동</li>
+                            </ul>
+                        </div>
+                        <!-- 3일차 -->
+                         <div>
+                             <h3 class="text-xl font-bold border-b-2 border-amber-500 pb-2 mb-4">3일차 | 10.29 (수)</h3>
+                            <ul class="space-y-3 text-left">
+                                <li><span class="font-semibold text-gray-500">07:00-09:00</span> 조식 및 체크아웃</li>
+                                <li><span class="font-semibold text-gray-500">09:00-10:30</span> 조별 워크샵 3</li>
+                                <li><span class="font-semibold text-gray-500">10:30-11:30</span> 한성 워십 & 사례 발표</li>
+                                <li><span class="font-semibold text-gray-500">11:30-13:20</span> 2026 행축 전략 & 점심 식사</li>
+                                <li><span class="font-semibold text-gray-500">13:20-13:40</span> 한성 워십</li>
+                                <li><span class="font-semibold text-gray-500">13:40-14:20</span> 폐회예배</li>
+                                <li><span class="font-semibold text-gray-500">14:20-15:00</span> 5W기도 & 협약식</li>
+                                <li><span class="font-semibold text-gray-500">15:00-</span> 제주공항 셔틀 운행</li>
+                                <li class="text-gray-400 mt-4">* 상기 일정은 변동될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 등록 안내 섹션 -->
+        <section id="register" class="py-20 md:py-28 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1593094959549-03058a5c378e?q=80&w=2070&auto=format&fit=crop');">
+            <div class="container mx-auto px-6 text-center">
+                 <div class="bg-white/90 backdrop-blur-sm max-w-4xl mx-auto p-8 md:p-12 rounded-2xl shadow-2xl reveal">
+                    <h2 class="section-title">제7차 행축 아카데미 <span class="gradient-text">등록 안내</span></h2>
+                     <div class="text-left max-w-md mx-auto mt-8 space-y-4 text-lg">
+                        <p><strong>🗓️ 일시:</strong> 2025년 10월 27일(월) - 29일(수)</p>
+                        <p><strong>📍 장소:</strong> 제주국제교회</p>
+                        <p><strong>👥 대상:</strong> 부흥을 갈망하는 모든 담임목회자, 사모, 부교역자</p>
+                        <p><strong>💰 등록비:</strong> 15만원 (숙식비 지원, <strong class="text-red-600">항공권 비포함</strong>)</p>
+                        <p><strong>🖥️ 등록 기간:</strong> 9월 24일(수)부터 홈페이지 선착순 마감</p>
+                    </div>
+                    <a href="http://www.happymaker.academy/" target="_blank" class="cta-button mt-12">지금 바로 등록하고 부흥을 경험하십시오!</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <h3 class="font-bold text-2xl font-poppins text-white">행축<span class="gradient-text">DYNAMITE</span></h3>
+            <p class="mt-4">"복음의 능력이 폭발할 때 교회는 진격한다."</p>
+            <p class="mt-2 text-gray-400">주최: 한성교회 | 문의: 02-2603-7200</p>
+            <p class="mt-4 text-gray-400 text-sm">후원: CTS기독교TV, 국민일보, 기독일보, 크리스찬투데이, 넥스트교회교육개발원</p>
+            <p class="mt-1 text-gray-500 text-sm">&copy; 2025 Haengchook Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 숫자 카운팅 애니메이션
+        const counters = document.querySelectorAll('[data-target]');
+        const speed = 200; // 숫자가 클수록 느려짐
+
+        const animateCounter = (counter) => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const inc = target / speed;
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + inc);
+                setTimeout(() => animateCounter(counter), 1);
+            } else {
+                counter.innerText = target.toLocaleString();
+            }
+        };
+
+        // 스크롤 시 요소 나타나는 애니메이션
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            const windowHeight = window.innerHeight;
+            const revealPoint = 100;
+
+            reveals.forEach(el => {
+                const revealTop = el.getBoundingClientRect().top;
+                if (revealTop < windowHeight - revealPoint) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        
+        // 스크롤 시 통계 카운터 시작
+        const handleScroll = () => {
+            reveal(); // 요소 나타나는 애니메이션 실행
+            
+            const statsSection = document.querySelector('.bg-gray-800');
+            if (statsSection) {
+                const rect = statsSection.getBoundingClientRect();
+                 // 뷰포트에 통계 섹션이 보이기 시작하면 카운팅 시작
+                if (rect.top < window.innerHeight && rect.bottom >= 0 && !statsSection.hasAttribute('data-animated')) {
+                    counters.forEach(animateCounter);
+                    statsSection.setAttribute('data-animated', 'true'); // 한번만 실행되도록 플래그 설정
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        // 페이지 로드 시 초기 실행
+        handleScroll();
+
+    </script>
+</body>
+</html>
+
